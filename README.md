@@ -1,4 +1,4 @@
-# Turochamp
+![Turochamp](./images/TuroChamp.png)
 
 This is a browser based implementation of Alan Turing and David Champernowne's Turochamp chess engine, which they wrote in 1948.
 
