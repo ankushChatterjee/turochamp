@@ -22,5 +22,3 @@ npm run build
 Screenshot :-
 
 ![Screenshot](./images/screenshot.png)
-
-Known Bugs :- Moving the a8 rooks sometimes crashes the program. Probably its a bug with chess.js
