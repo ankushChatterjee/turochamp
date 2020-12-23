@@ -518,6 +518,7 @@ var Chess = function(fen) {
       function add_move(board, moves, from, to, flags) {
         /* if pawn promotion */
         if (
+          typeof board[from] !== "undefined" &&
           board[from].type === PAWN &&
           (rank(to) === RANK_8 || rank(to) === RANK_1)
         ) {
@@ -640,8 +641,9 @@ var Chess = function(fen) {
         if (castling[us] & BITS.QSIDE_CASTLE) {
           var castling_from = kings[us]
           var castling_to = castling_from - 2
-  
+          
           if (
+            castling_from != -1 &&
             board[castling_from - 1] == null &&
             board[castling_from - 2] == null &&
             board[castling_from - 3] == null &&
